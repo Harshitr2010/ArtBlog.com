@@ -1,0 +1,265 @@
+html{
+   scroll-behavior: smooth;
+}
+body{
+    background-color: lightblue;
+ }
+ .cover{
+   position: fixed;
+   background-color: white;
+   top:0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   animation: fade-out 4s;
+   z-index: 100;
+   transition: z-index 1s;
+   /* margin-top: 200px; */
+ }
+ .cover video{
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   top:0;
+   left:0;
+   margin-top: 267.5px;
+   margin-left: 652px;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: auto;
+   z-index:  100;
+   opacity: 1;
+   --size:10px;
+   /* position: absolute;
+   top: 50%;
+   left: 50%; */
+   transform: translate(-50%, -50%);
+   width: var(--size);
+   animation: zoom-in 2s;
+   animation-delay: 2s;
+ }
+ @keyframes zoom-in{
+   50%{
+      width: var(--size);
+   }
+   60%{
+      width: calc(var(--size));
+   }
+   100%{
+      width: 250%;
+   }
+ }
+ @keyframes fade-out{
+   0%, 85%{
+      opacity: 1;
+   }
+   100%{
+      opacity: 0;
+   }
+ }
+ .main{
+    padding: 0 40px;
+ }
+ .body2{
+    background-color: lightblue;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 15px;
+    
+ }
+ .carousel{
+    background-color: white;
+ }
+ .header{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0px 10px 25px rgba(0, 123, 255, 1);
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    opacity: 1;
+    transition: opacity 1s;
+
+ }
+ .header h2 a{
+    letter-spacing: 6px;
+    text-decoration: none;
+    color: lightseagreen;
+    margin-left: 12px;
+ }
+ .flex{
+   display: flex;
+ }
+ .flex img{
+   border-radius: 30px;
+   height: 55px;
+   margin-top:-12px;
+ }
+ .nav{
+    display: flex;
+ }
+ .nav a{
+    color: black;
+    font-size: 20px;
+    padding: 0 25px;
+    text-decoration: none;
+    transition: .3s;
+ }
+ .nav a:hover{
+   color:  #d62020;
+ }
+ .body2{
+   margin-top: 110px;
+ }
+ .nav li{
+    list-style-type: none;
+ }
+.container img{
+    max-width: 900px;
+    max-height: 90%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+/*    width: 1050;
+    margin-left: 100px;
+    position: absolute;
+    top: 48px;
+
+background-color: white;
+width: 1050px;
+margin-left: 40px;
+position: absolute;
+top: 95px; */
+#carouselExample .carousel-control-prev,
+#carouselExample .carousel-control-next {
+    background-color: black; /* Button background color on hover */
+    opacity: 0.5;
+    height: 50px;
+    width: 50px;
+    margin-top: 275px;
+}
+#carouselExample .carousel-indicators{
+    background-color:rgba(0, 0, 0, 0.5);; /* Button background color on hover */
+    height: 10px;
+}
+#carouselExample .carousel-caption{
+    background-color:rgba(0, 0, 0, 0.5); /* Button background color on hover */
+    position: absolute;
+    bottom: 36px;
+}
+.blogs_aboutme{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+
+}
+.blogs{
+   width: 65%;
+}
+.card{
+   padding: 40px;
+   margin-top: 20px;
+   text-align: center;
+}
+.card img{
+   padding: 20px;
+   height: 300px;
+   width: 275px;
+   margin: auto;
+}
+.card a{
+   text-decoration: none;
+   color: black;
+}
+.blogs button{
+   width: 350px;
+   padding: 8px 0;
+   background: #ffffff;
+   border: 1px solid orange;
+   margin: auto;
+}
+.aboutme{
+   width: 30%;
+}
+.aboutme p{
+   padding-top: 15px;
+}
+.popular{
+   background-color: white;
+   padding: 10px;
+   text-align: center;
+   margin-bottom: 15px;
+}
+.popular a{
+   text-decoration: none;
+   color: black;
+}
+.popular button{
+   width: 275px;
+   padding: 8px 0;
+   background: #ffffff;
+   border: 1px solid orange;
+   margin: 0 auto;
+}
+.footer{
+   padding: 20px;
+   background: white;
+   margin-top: 20px;
+   margin-bottom: 30px;
+   width: 500px;
+}
+.footer h2{
+   text-align: center;
+}
+.submit_button{
+   margin-top: 20px;
+   text-align: center;
+}
+.hove:hover{
+   border-bottom: 2px solid rgba(55, 55, 230, 0.8);
+}
+.hove{
+   width: 395px;
+}
+.bg{
+   background-color: #ffffff;
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+.article{
+   margin:auto;
+   text-align: center;
+   margin-top: 110px;
+   font-family: 'Segoe UI';
+   width: 60%;
+   box-shadow: 0px 2px 11px 5px grey;
+   background-color: white;
+   padding: 0 30px;
+}
+.article img{
+   height: 450px;
+   width: 400px;
+}
+.article h1{
+   color: red;
+}
+.art_description{
+   width: 70%;
+   margin: auto;
+   text-align: left;
+}
+.art_description p{
+   word-spacing: 5px;
+   line-height: 30px;
+}
